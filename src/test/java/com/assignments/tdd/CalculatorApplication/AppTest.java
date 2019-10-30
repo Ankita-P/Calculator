@@ -1,6 +1,5 @@
 package com.assignments.tdd.CalculatorApplication;
 
-
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -61,6 +60,14 @@ public class AppTest
     {
     	Calculator calculator = new Calculator(inputNumberOne, inputNumberTwo);
     	operationResult = calculator.multiply();
+    	
+    	assertTrue(true);
+    }
+    
+    public void testCalculatorModulus()
+    {
+    	Calculator calculator = new Calculator(inputNumberOne, inputNumberTwo);
+    	operationResult = calculator.modulus();
     	
     	assertTrue(true);
     }
