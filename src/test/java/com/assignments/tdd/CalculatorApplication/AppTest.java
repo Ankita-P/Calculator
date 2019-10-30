@@ -49,4 +49,12 @@ public class AppTest
     	
     	assertTrue(true);
     }
+    
+    public void testCalculatorDivision()
+    {
+    	Calculator calculator = new Calculator(inputNumberOne, inputNumberTwo);
+    	operationResult = calculator.divide();
+    	
+    	assertTrue(true);
+    }
 }
