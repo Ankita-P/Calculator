@@ -1,6 +1,7 @@
 package com.assignments.tdd.CalculatorApplication;
 
 
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -37,6 +38,14 @@ public class AppTest
     {
     	Calculator calculator = new Calculator(inputNumberOne, inputNumberTwo);
     	operationResult = calculator.add();
+    	
+    	assertTrue(true);
+    }
+    
+    public void testCalculatorSubtraction()
+    {
+    	Calculator calculator = new Calculator(inputNumberOne, inputNumberTwo);
+    	operationResult = calculator.subtract();
     	
     	assertTrue(true);
     }
