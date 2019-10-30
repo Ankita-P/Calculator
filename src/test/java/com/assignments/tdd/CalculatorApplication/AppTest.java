@@ -1,5 +1,6 @@
 package com.assignments.tdd.CalculatorApplication;
 
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -10,6 +11,10 @@ import junit.framework.TestSuite;
 public class AppTest 
     extends TestCase
 {
+	public int inputNumberOne = 10;
+	public int inputNumberTwo = 5;
+	public int operationResult = 0;
+	
     /**
      * Create the test case
      *
@@ -28,11 +33,11 @@ public class AppTest
         return new TestSuite( AppTest.class );
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
+    public void testCalculatorAddition()
     {
-        assertTrue( true );
+    	Calculator calculator = new Calculator(inputNumberOne, inputNumberTwo);
+    	operationResult = calculator.add();
+    	
+    	assertTrue(true);
     }
 }
